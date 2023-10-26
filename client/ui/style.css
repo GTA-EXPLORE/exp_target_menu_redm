@@ -1,0 +1,139 @@
+@font-face {
+    font-family: PRIMARY;
+    src:url("CHINESER.ttf");
+}
+
+@font-face {
+    font-family: SECONDARY;
+    src:url("kirsty.otf");
+}
+
+:root {
+    --main: #d80d0d;
+    --background: #1301019a;
+    --light: white;
+}
+
+* {
+    user-select: none;
+}
+
+body {
+    /* overflow: hidden; */
+}
+
+/* CURSOR */
+#cursor {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid var(--main);
+    background-color: transparent;
+    transition: all 70ms;
+    display: none;
+    box-shadow: 0 0 10px 5px var(--main);
+}
+
+#cursor.active {
+    /* box-shadow: none; */
+    background-color: var(--main);
+
+    width: 5px;
+    height: 5px;
+}
+
+
+/* MENU */
+#menu {
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 51%;
+
+    display: none;
+    transform: translateY(-10.5%);
+}
+
+#menu.active {
+    display: block;
+}
+
+#menu-title {
+    overflow: hidden;
+    color: var(--light);
+    font-family: PRIMARY;
+    text-transform: uppercase;
+    font-size: 2.5vw;
+}
+
+#menu-title-text {
+    transform: translateY(100%);
+}
+
+#menu-title-text.active {
+    transform: translateY(0);
+    transition: transform 300ms;
+}
+
+#menu-list {
+    width: 110%;
+    max-height: 12vw;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    margin-top: 0.2vw;
+}
+
+#menu-list::-webkit-scrollbar {
+    display: none;
+}
+
+.menu-item {
+
+    /* width: fit-content; */
+    /* background-color: var(--background); */
+    background-image: url(toast_bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    padding: 0.3vw 1vw 0.3vw 0.3vw;
+    margin-bottom: 0.2vw;
+
+    font-family: SECONDARY;
+    color: var(--light);
+    letter-spacing: 1px;
+    font-weight: 600;
+    white-space: nowrap;
+
+    cursor: pointer;
+}
+
+.menu-item.active {
+    opacity: 0.75;
+    transition: transform 200ms, opacity 200ms;
+}
+
+.menu-item.active:hover {
+    opacity: 1;
+}
+
+strong {
+    color: var(--hl);
+    pointer-events: none;
+}
+
+#menu-line {
+    width: 0%;
+    height: 1px;
+    border-top: 2px solid var(--light);
+    transition: width 200ms;
+}
+
+#menu-line.active {
+    width: 100%;
+}
