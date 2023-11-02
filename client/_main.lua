@@ -32,9 +32,9 @@ end)
 
 Citizen.CreateThread(function()
     while true do Wait(1)
-        if IsControlPressed(0, 0x80F28E95) then
+        if IsControlPressed(0, KEY_CURSOR) then
             ExecuteCommand("+track")
-            while IsControlPressed(0, 0x80F28E95) do Wait(0) end
+            while IsControlPressed(0, KEY_CURSOR) do Wait(1) end
             ExecuteCommand("-track")
         end
     end
