@@ -22,7 +22,7 @@ $("html").click(function(e) {
 
 function CloseUI() {
     $(".active").removeClass("active")
-    $.post("http://exp_target_menu/Close")
+    $.post("http://exp_target_menu_redm/Close")
 }
 
 executes["SHOW_CURSOR"] = function(data) {
@@ -51,7 +51,7 @@ executes["OPEN_MENU"] = function(data) {
         const item = $(`<div class="menu-item">${value.desc}</div>`)
         
         item.click(function() {
-            $.post("http://exp_target_menu/Trigger", JSON.stringify({
+            $.post("http://exp_target_menu_redm/Trigger", JSON.stringify({
                 event: key
             }))
             if (value.stay != true) CloseUI()
