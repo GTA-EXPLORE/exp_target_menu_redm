@@ -19,3 +19,10 @@ You can find the complete [documentation](https://discord.com/channels/957638068
 
 # Check out all our works
 We are working on other **resources**. You can check them out on our [website](https://www.gta-explore.com/#services).
+
+# Updates
+### Dec 31, 2023
+> - Functions can now be called with **exports**.
+> - Interaction can now have **arguments**.
+> - Entities and models can now be **named directly** when declared.
+> - New **documentation** [here](https://rdr3docs.gta-explore.com/target-menu).
