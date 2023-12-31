@@ -1,6 +1,6 @@
 LANGUAGE = "en"
 
-KEY_CURSOR = 0x80F28E95 -- L (INPUT_PLAYER_MENU). See https://github.com/femga/rdr3_discoveries/tree/master/Controls
+KEY_CURSOR = "INPUT_SELECT_RADAR_MODE" -- LEFT ALT See https://github.com/femga/rdr3_discoveries/tree/master/Controls
 RANGE = 1.5
 
 function GetAspectRatio()   -- DO NOT EDIT
