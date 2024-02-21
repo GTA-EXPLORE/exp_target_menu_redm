@@ -3,7 +3,7 @@ show_cursor, paused, interacting, cursor_active = false, false, false, false
 player, reg_entities, reg_models, reg_names, reg_model_names, reg_model_offsets = {}, {}, {}, {}, {}, {}
 TYPE_TO_OPTION = {all = 0, ped = 1, vehicle = 2, object = 3, player = "player", in_vehicle = "in_vehicle"}
 
-local options = {
+options = {
     [0] = { -- all
         ["redemrp_inventory:ToggleInventory"] = {
             desc = "Open Inventory",
