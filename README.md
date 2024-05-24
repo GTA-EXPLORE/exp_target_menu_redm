@@ -26,3 +26,6 @@ We are working on other **resources**. You can check them out on our [website](h
 > - Interaction can now have **arguments**.
 > - Entities and models can now be **named directly** when declared.
 > - New **documentation** [here](https://rdr3docs.gta-explore.com/target-menu).
+
+# CREDITS
+    Credits goes to [EXLPORE](https://github.com/GTA-EXPLORE) I just corrected something in the original script
