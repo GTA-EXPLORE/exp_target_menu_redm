@@ -195,7 +195,7 @@ function AreCoordsCentered(screen_x, screen_y)
 end
 
 RegisterNUICallback("Trigger", function(data, cb)
-    TriggerEvent(data.event, rc_entity, data.data.arguments)
+    TriggerEvent(data.event, rc_entity, data.arguments)
 end)
 
 RegisterNUICallback("Close", function()
